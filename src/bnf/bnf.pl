@@ -1,5 +1,5 @@
 % BNF
-% Referencia LibroPROLOG Proyecto5
+% Referencia LibroPROLOG Proyecto5 [http://mural.uv.es/mijuanlo/PracticasPROLOG.pdf]
 % Author GitHub@JoDaniel1412
 % Ultimo cambio 03/09/2019 por @JoDaniel1412
 
