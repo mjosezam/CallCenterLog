@@ -1,7 +1,7 @@
 % Sustantivos
 % Referencia LibroPROLOG Proyecto5 [http://mural.uv.es/mijuanlo/PracticasPROLOG.pdf]
 % Author GitHub@JoDaniel1412
-% Ultimo cambio 03/09/2019 por @JoDaniel1412
+% Ultimo cambio 03/09/2019 por @ErickCR12
 
 % Estructura de la base de datos:
 % arg0 cantidad: singular o plural
@@ -16,11 +16,17 @@ sustantivo(plural, femenino, [mujeres|S], S).
 sustantivo(singular, femenino, [persona|S], S).
 sustantivo(plural, femenino, [personas|S], S).
 
-sustantivo(singular, femenino, [manzana|S], S).
-sustantivo(singular, femenino, [fruta|S], S).
-
 sustantivo(singular, masculino, [computador|S], S).
 sustantivo(singular, femenino, [computadora|S], S).
 sustantivo(singular, femenino, [impresora|S], S).
 sustantivo(singular, masculino, [cable|S], S).
 sustantivo(singular, masculino, [wifi|S], S).
+sustantivo(singular, femenino, [pantalla|S], S).
+sustantivo(singular, masculino, [mouse|S], S).
+sustantivo(singular, masculino, [raton|S], S).
+sustantivo(singular, masculino, [teclado|S], S).
+sustantivo(singular, femenino, [red|S], S).
+sustantivo(singular, masculino, [office|S], S).
+sustantivo(plural, masculino, [drivers|S], S).
+sustantivo(singular, feminino, [referencia|S], S).
+sustantivo(plural, feminino, [referencias|S], S).
