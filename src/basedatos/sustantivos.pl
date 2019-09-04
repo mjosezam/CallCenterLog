@@ -16,11 +16,13 @@ sustantivo(plural, femenino, [mujeres|S], S).
 sustantivo(singular, femenino, [persona|S], S).
 sustantivo(plural, femenino, [personas|S], S).
 
-sustantivo(singular, femenino, [manzana|S], S).
-sustantivo(singular, femenino, [fruta|S], S).
-
 sustantivo(singular, masculino, [computador|S], S).
 sustantivo(singular, femenino, [computadora|S], S).
 sustantivo(singular, femenino, [impresora|S], S).
 sustantivo(singular, masculino, [cable|S], S).
 sustantivo(singular, masculino, [wifi|S], S).
+sustantivo(singular, femenino, [pantalla|S], S).
+sustantivo(singular, masculino, [mouse|S], S).
+sustantivo(singular, masculino, [ratón|S], S).
+sustantivo(singular, masculino, [teclado|S], S).
+sustantivo(singular, masculino, [pantalla|S], S).
