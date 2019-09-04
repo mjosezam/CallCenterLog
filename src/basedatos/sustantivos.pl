@@ -1,13 +1,13 @@
 % Sustantivos
-% Referencia LibroPROLOG Proyecto5
+% Referencia LibroPROLOG Proyecto5 [http://mural.uv.es/mijuanlo/PracticasPROLOG.pdf]
 % Author GitHub@JoDaniel1412
 % Ultimo cambio 03/09/2019 por @JoDaniel1412
 
 % Estructura de la base de datos:
 % arg0 cantidad: singular o plural
 % arg1 genero: masculino o femenino
-% arg3 sustantivo
-% arg4 resto de la lista
+% arg2 sustantivo
+% arg3 resto de la lista
 
 sustantivo(singular, masculino, [hombre|S], S).
 sustantivo(plural, masculino, [hombres|S], S).
