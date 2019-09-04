@@ -23,7 +23,7 @@ sustantivo(singular, masculino, [cable|S], S).
 sustantivo(singular, masculino, [wifi|S], S).
 sustantivo(singular, femenino, [pantalla|S], S).
 sustantivo(singular, masculino, [mouse|S], S).
-sustantivo(singular, masculino, [ratón|S], S).
+sustantivo(singular, masculino, [raton|S], S).
 sustantivo(singular, masculino, [teclado|S], S).
 sustantivo(singular, femenino, [red|S], S).
 sustantivo(singular, masculino, [office|S], S).
