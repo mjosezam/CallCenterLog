@@ -9,6 +9,10 @@ oracion(S0, S) :-
 	sintagma_nominal(NUM, _, PERS, S0, S1),
 	sintagma_verbal(NUM, _, PERS, S1, S).
 
+oracion(S0, S) :-
+	pronombre(NUM, GEN, PERS, S0, S1),
+	sintagma_verbal(NUM, GEN, PERS, S1, S).
+
 
 % Sintagmas Nominales %
 sintagma_nominal(NUM, GEN, PERS, S0, S) :-
