@@ -1,6 +1,7 @@
 
 :-consult('bnf/bnf.pl').
 :-consult('basedatos/basedatos.pl').
+:-consult('bnf/analizador.pl').
 
 
 iniciar() :-
@@ -19,20 +20,15 @@ conversar() :-
 	repeat(),
 
 	imprimir_nombre(usuario),
-	read(M),
-	nl(),
+	read(M), nl(),
 
 	imprimir_nombre(bot),
 	analizar_respuesta(M, R),
-	write(R), 
-	nl(),
+	write(R), nl(),
 
 	fin(F),
 	(R \= F -> fail; !).
 
-
-analizar_respuesta(M, M).
-	
 
 imprimir_nombre(bot) :-
 	bot(N), write(N), write(": ").
