@@ -21,3 +21,5 @@ sustantivo(singular, masculino, [office|S], S).
 sustantivo(plural, masculino, [drivers|S], S).
 sustantivo(singular, feminino, [referencia|S], S).
 sustantivo(plural, feminino, [referencias|S], S).
+sustantivo(singular, masculino, [problema|S], S).
+sustantivo(plural, masculino, [problemas|S], S).

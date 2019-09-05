@@ -128,7 +128,8 @@ verbo(plural, tercera, [son|S], S).
 %Tener
 verbo(singular, tercera, [tenga|S], S).
 verbo(singular, primera, [tengo|S], S).
-verbo(plural, tercera, [tiene|S], S).
+verbo(singular, tercera, [tiene|S], S).
+verbo(plural, tercera, [tienen|S], S).
 verbo(singular, segunda, [tendrá|S], S).
 
 %_________________ U ____________
