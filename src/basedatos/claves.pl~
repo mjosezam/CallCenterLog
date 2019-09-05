@@ -15,6 +15,9 @@ clave(wifi).
 clave(pantalla).
 clave(raton).
 clave(teclado).
+clave(red).
+clave(office).
+clave(drivers).
 clave(problema).
 
 %COMPUTADORA
@@ -83,17 +86,18 @@ solucionador([[problema, pantalla],[
           ]]).
 
 
-%RATÓN
 solucionador([[problema, ratón],[
-              [[parece,no,funcionar],[
-                   [verifique,que,el,ratón,este,conectado,al,computador,si,este,es,inalambrico,compruebe,que,el,usb,este,tambien,conectado],
-                   [si,este,no,enciende,intente,cambiarlo]
+              [[no,muestra,ninguna,imagen],[
+                   [verifique,que,la,pantalla,este,conectada],
+                   [compruebe,que,esta,este,conectada,al,computador],
+                   [encienda,el,computador,y,la,pantalla]
                ]]
           ]]).
 
-solucionador([[problema, teclado],[
-              [[parece,no,funcionar],[
-                   [verifique,que,el,ratón,este,conectado,al,computador],
-                   [si,este,no,enciende,intente,cambiarlo]
-               ]]
-          ]]).
+clave(raton).
+clave(teclado).
+clave(red).
+clave(office).
+clave(drivers).
+clave(driver).
+

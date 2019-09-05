@@ -17,7 +17,9 @@ sustantivo(singular, masculino, [wifi|S], S).
 sustantivo(singular, femenino, [pantalla|S], S).
 sustantivo(singular, masculino, [raton|S], S).
 sustantivo(singular, masculino, [teclado|S], S).
+sustantivo(singular, femenino, [red|S], S).
 sustantivo(singular, masculino, [office|S], S).
 sustantivo(plural, masculino, [drivers|S], S).
+sustantivo(singular, masculino, [driver|S], S).
 sustantivo(singular, feminino, [referencia|S], S).
 sustantivo(plural, feminino, [referencias|S], S).
