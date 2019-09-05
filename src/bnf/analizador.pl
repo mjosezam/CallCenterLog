@@ -1,27 +1,58 @@
+:-consult('../basedatos/claves.pl').
+:-consult('../util/list.pl').
+
+
 % Concluye una respuesta al mensaje
 % arg0 mensaje
 % arg1 respuesta
 analizar_respuesta(M, R) :-
 	convertir_lista(M, LIST),
 	oracion(LIST, []),
-	buscar_clave(LIST, KEY),
-	tipo_problema(LIST, TYPE),
 
 	(buscar_clave(LIST, KEY) -> 
 		tipo_problema(LIST, TYPE),
-		solucionador([KEY, TYPE], PROBLEM),
-		analizar_problema(PROBLEM)
-		; fallo(F), R = F).
+		solucionador([TYPE, KEY], PROBLEM),
+		analizar_problema(PROBLEM, R)
+		; fallo(R)).
 	
 
-analizar_problema([H|T], R) :-
-	(H == [] ->	
-		fallo(F), R = F
-		; (problema_coincide(H) -> 
-			dar_solucion
-			; analizar_problema(T, R)
-			)
-	).
+% Itera atraves de los posibles problemas
+analizar_problema([], R) :- no_problema(R).
+analizar_problema([P0|P], R) :-
+	(problema_coincide(P0, S) -> 
+		first(S, H),
+		analizar_solucion(H, R)
+		; analizar_problema(P, R)).
+
+
+problema_coincide([P|S], S) :-
+	convertir_lista(STR, P),
+	write(STR), write(?), nl,
+
+	pregunta(X),
+	write(X), nl,
+
+	read(Y),
+	Y == si.
+
+
+% Itera atraves de las posibles soluciones
+analizar_solucion([], R) :- no_solucion(R).
+analizar_solucion([S0|S1], R) :-
+	(solucion_coincide(S0) -> 
+		amable(R)
+		; analizar_solucion(S1, R)).
+
+
+solucion_coincide(S0) :-
+	convertir_lista(STR, S0),
+	write(STR), nl,
+
+	funciono(X),
+	write(X), nl,
+
+	read(Y),
+	Y == si.
 
 
 % Busca si la lista tiene palabras claves
@@ -38,8 +69,8 @@ convertir_lista(S, L) :- atomic_list_concat(L, ' ', S).
 
 
 tipo_problema(L, R) :- 
-	(es_problema(L) -> R = problema),
-	(es_referencia(L) -> R = referencia).
+	(es_referencia(L) -> R = referencia ; R = problema),
+	(es_problema(L) -> R = problema ; R = problema).
 
 es_problema(L) :- member(problema, L).
 es_referencia(L) :- member(referencia, L).

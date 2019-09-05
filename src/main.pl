@@ -27,7 +27,7 @@ conversar() :-
 	write(R), nl(),
 
 	fin(F),
-	(R \= F -> fail; !).
+	(M == F -> !).
 
 
 imprimir_nombre(bot) :-

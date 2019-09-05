@@ -12,8 +12,8 @@ prueba_incoherencia() :-
 
 prueba_coherencia() :-
 	write("prueba_coherencia: \n"),
-	( oracion([la,mujer,usa,el,wifi], []) -> write("OK \n") ; write("FAIL \n") ),
-	( oracion([el,hombre,enciende,el,computador], []) -> write("OK \n") ; write("FAIL \n") ).
+	( oracion([ella,usa,el,wifi], []) -> write("OK \n") ; write("FAIL \n") ),
+	( oracion([el,wifi,no,sirve], []) -> write("OK \n") ; write("FAIL \n") ).
 
 prueba_pronombre() :-
 	write("prueba_pronombre: \n"),
