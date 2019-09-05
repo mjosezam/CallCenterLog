@@ -20,15 +20,18 @@ conversar() :-
 
 	imprimir_nombre(usuario),
 	read(M),
+	nl(),
 
 	imprimir_nombre(bot),
 	analizar_respuesta(M, R),
 	write(R), 
-	nl(), !.
+	nl(),
+
+	fin(F),
+	(R \= F -> fail; !).
 
 
-analizar_respuesta(M, R) :-
-	M == R.
+analizar_respuesta(M, M).
 	
 
 imprimir_nombre(bot) :-
