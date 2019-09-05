@@ -12,13 +12,13 @@ prueba_incoherencia() :-
 
 prueba_coherencia() :-
 	write("prueba_coherencia: \n"),
-	( oracion([la,mujer,come,la,fruta], []) -> write("OK \n") ; write("FAIL \n") ),
-	( oracion([el,hombre,come,la,manzana], []) -> write("OK \n") ; write("FAIL \n") ).
+	( oracion([la,mujer,usa,el,wifi], []) -> write("OK \n") ; write("FAIL \n") ),
+	( oracion([el,hombre,enciende,el,computador], []) -> write("OK \n") ; write("FAIL \n") ).
 
 prueba_pronombre() :-
 	write("prueba_pronombre: \n"),
-	( oracion([yo,como,la,manzana], []) -> write("OK \n") ; write("FAIL \n") ),
-	( oracion([ellos,comen,la,fruta], []) -> write("OK \n") ; write("FAIL \n") ).
+	( oracion([yo,enciendo,la,computadora], []) -> write("OK \n") ; write("FAIL \n") ),
+	( oracion([ellos,conectan,la,impresora], []) -> write("OK \n") ; write("FAIL \n") ).
 
 run() :-
 	prueba_incoherencia,

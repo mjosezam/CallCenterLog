@@ -24,6 +24,10 @@ verbo(singular, segunda, [apague|S], S).
 %_________________ C ____________
 %Comentar
 verbo(singular, primera, [comento|S], S).
+
+%Conectar
+verbo(plural, tercera, [conectan|S], S).
+
 %_________________ D ____________
 %Descargar
 verbo(singular, segunda, [descargue|S], S).
@@ -46,6 +50,7 @@ verbo(singular, segunda, [empiece|S], S).
 verbo(singular, segunda, [espere|S], S).
 
 %Encender
+verbo(singular, primera, [enciendo|S], S).
 verbo(singular, tercera, [enciende|S], S).
 
 %Entender
@@ -128,6 +133,7 @@ verbo(singular, segunda, [tendrá|S], S).
 
 %_________________ U ____________
 %Utilizar
+verbo(singular, tercera, [usa|S], S).
 verbo(singular, tercera, [utiliza|S], S).
 verbo(plural, tercera, [utilizan|S], S).
 %_________________ V ____________
