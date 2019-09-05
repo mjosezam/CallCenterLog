@@ -16,11 +16,13 @@ saludar() :-
 
 
 conversar() :-
-	%repeat(),
+	repeat(),
 
 	imprimir_nombre(usuario),
 	read(M), nl(),
 
 	analizar_respuesta(M, R),
 	imprimir_nombre(bot),
-	write(R), nl().
+	write(R), nl(),
+
+	(M \= fin -> fail ; !).

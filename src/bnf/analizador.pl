@@ -33,6 +33,7 @@ problema_coincide([P|S], S) :-
 	pregunta(X),
 	write(X), nl,
 
+	imprimir_nombre(usuario),
 	read(Y),
 	Y == si.
 
@@ -40,8 +41,7 @@ problema_coincide([P|S], S) :-
 % Itera atraves de las posibles soluciones
 analizar_solucion([], R) :- no_solucion(R).
 analizar_solucion([S0|S1], R) :-
-	(solucion_coincide(S0) -> 
-		imprimir_nombre(bot),
+	(solucion_coincide(S0) ->
 		amable(R)
 		; analizar_solucion(S1, R)).
 
@@ -54,6 +54,7 @@ solucion_coincide(S0) :-
 	funciono(X),
 	write(X), nl,
 
+	imprimir_nombre(usuario),
 	read(Y),
 	Y == si.
 
