@@ -27,11 +27,10 @@ analizar_problema([P0|P], R) :-
 
 problema_coincide([P|S], S) :-
 	convertir_lista(STR, P),
-	imprimir_nombre(bot),
-	write(STR), write(?), nl,
 
-	pregunta(X),
-	write(X), nl,
+	imprimir_nombre(bot),
+	write(STR), write(?), put(' '),
+	pregunta(X), write(X), nl,
 
 	imprimir_nombre(usuario),
 	read(Y),
@@ -48,11 +47,11 @@ analizar_solucion([S0|S1], R) :-
 
 solucion_coincide(S0) :-
 	convertir_lista(STR, S0),
+	
 	imprimir_nombre(bot),
-	write(STR), nl,
+	write(STR), put(' '),
 
-	funciono(X),
-	write(X), nl,
+	funciono(X), write(X), nl,
 
 	imprimir_nombre(usuario),
 	read(Y),
